@@ -36,8 +36,8 @@ export const dataManifest: DataManifest = [
         src: '../data/img/ghost64.png',
     },
     {
-        name: dataNames.mapBorderTile,
+        name: dataNames.mapBorderImage,
         type: dataTypes.image,
-        src: '../data/img/map-border.tile.png',
+        src: '../data/img/map-border.png',
     },
 ];

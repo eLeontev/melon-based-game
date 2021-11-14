@@ -2,6 +2,7 @@ export enum dataTypes {
     binary = 'binary',
     image = 'image',
     map = 'tmx',
+    tile = 'tsx',
 }
 export type DataSettings = {
     name: dataNames;
@@ -15,5 +16,5 @@ export enum dataNames {
     font = 'font',
     player = 'player',
     enemy = 'enemy',
-    mapBorderTile = 'mapBorderTile',
+    mapBorderImage = 'mapBorderImage',
 }
