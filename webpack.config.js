@@ -25,13 +25,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './index.html',
             hash: true,
         }),
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: './src/data',
+                    from: './data',
                     to: './data',
                     filter: async (resourcePath) => {
                         // add your custom extension here if not listed
@@ -59,14 +59,14 @@ module.exports = {
             ],
         }),
         new FaviconsWebpackPlugin({
-            logo: './src/favicon/logo.png', // svg works too!
+            logo: './favicon/logo.png', // svg works too!
             mode: 'auto', // optional can be 'webapp', 'light' or 'auto' - 'auto' by default
             devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default
             favicons: {
-                appName: 'melonJS ES6 Boilerplate',
-                appDescription: 'My melonJS ES6 Boilerplate Game',
-                developerName: 'melonJS',
-                developerURL: 'http://www.melonjs.org', // prevent retrieving from the nearest package.json
+                appName: 'Pacman',
+                appDescription: 'pacman tutorial',
+                developerName: '-',
+                developerURL: '-', // prevent retrieving from the nearest package.json
                 icons: {
                     coast: false,
                     yandex: false,
