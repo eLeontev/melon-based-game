@@ -6,7 +6,9 @@ export class PlayerEntity extends Entity {
     }
 
     update(deltaTime: number) {
-        return super.update(deltaTime);
+        super.update(deltaTime);
+
+        return true;
     }
 
     onCollision(): boolean {
